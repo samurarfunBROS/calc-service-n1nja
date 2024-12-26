@@ -13,24 +13,28 @@
    go run ./cmd/calc-service-n1nja/...
 4. Сервис будет доступен по адресу http://localhost:8080.
 
-Примеры использования
-Успешный запрос
+## Примеры использования
+**Успешный запрос**
+
 Запрос:
 
-bash
-Копировать код
+```bash
 curl --location 'http://localhost:8080/api/v1/calculate' \
 --header 'Content-Type: application/json' \
 --data '{
   "expression": "2+2*2"
 }'
+
+
 Ответ:
 
-json
-Копировать код
+
+```json
 {
   "result": 6
 }
+
+
 Ошибка валидации (422)
 Запрос:
 
